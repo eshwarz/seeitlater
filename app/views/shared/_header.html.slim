@@ -1,32 +1,8 @@
 header
-	/ .container
-	/ 	- if user_signed_in?
-	/ 		- if current_user.user_type == 'guest'
-	/ 			.fl.fb style="line-height: 30px;"
-	/ 				|This is guest account and is only for trial purposes. Please 
-	/ 				= link_to 'create an account', destroy_user_session_path(:signup => 'true')
-	/ 				|to use SUREIFY.
-	/ 		.top_links
-	/ 			.icon.fl.dn
-	/ 				.update
-	/ 			.icon.fl.dn
-	/ 				.cancel
-	/ 			.icon.fl.dn
-	/ 				.add
-	/ 			.icon.fl.dn
-	/ 				= link_to raw("<div class='settings'></div>"), edit_profile_path(current_user)
-	/ 			.fr.top_links_container
-	/ 				= link_to 'Home', home_path
-	/ 				/ = link_to 'Profile', profile_path(current_user)
-	/ 				- unless current_user.user_type == 'guest'
-	/ 					= link_to 'Sign Out', destroy_user_session_path
-	/ 		.clearfix
-
-	/ 	- else
-	/ 		.login_links
-	/ 			= link_to 'Home', root_path, :class => 'mrl fl db'
-	/ 			/ = link_to 'Sign In', new_user_session_path, :class => 'mrl fl db'
-	/ 			/ = link_to 'Register', new_user_registration_path, :class => 'mrl fl db'
-	/ 			= link_to raw("<div class='fb_icon fl'>Login with facebook</div>"), '/auth/facebook?display=popup', :class => 'mrl db'
-	/ 			.clearfix
-	/ 	.clearfix
+	.top_liner
+	.content_width
+		.hpad
+			div
+				.logo
+				.logo_name
+				.clearfix

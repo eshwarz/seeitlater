@@ -1,0 +1,40 @@
+@import 'mixins';
+body {
+	@include default_font;
+	font-size: 15px;
+	//font-weight: bold;
+	margin: 0;
+	padding: 0;
+	background: #F0F0F0;
+}
+
+.content_width, .container {
+	//width: 960px;
+	width: 100%;
+	margin: auto;
+}
+
+.container_padding {
+	padding: 10px;
+}
+
+.hpad {
+	padding: 0 10px;
+}
+
+.vpad {
+	padding: 10px 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+a {
+	color: #359CDE;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
